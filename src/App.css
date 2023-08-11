@@ -1,38 +1,193 @@
-.App {
-  text-align: center;
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.buttons div{
+    margin: 10px;
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logoMain{
+    display: flex;
+    justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sliding-word{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    font-size: 14px;
+    background-color: rgba(199, 197, 194, 0.589);
 }
 
-.App-link {
-  color: #61dafb;
+.menu-list{
+    display: flex;
+    font-size: 13px;
+    list-style-type: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-list li{
+    padding: 10px;
+}
+
+.menu-area{
+    display: flex;
+    justify-content: center;
+}
+
+.NewArrival-area{
+    position: relative;
+    text-align: center;
+    margin: 25px;
+}
+
+.proTitle{
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.choice{
+    font-size: 14px;
+    color: rgb(158, 121, 75);
+}
+
+.homeImg{
+    cursor: pointer;
+}
+
+.explain{
+    font-family: 'TheJamsil4Light';
+    font-size: 11px;
+    color: rgb(83, 80, 80);
+}
+
+.price{
+    font-size: 14px;
+}
+
+.NewA div{
+    padding: 3px;
+}
+
+.NewA img{
+    cursor: pointer;
+}
+
+.NewArrival-text{
+    font-size: 25px;
+}
+
+.update-new{
+    font-size: 11px;
+    color: rgb(133, 130, 127);
+}
+
+.main-log{
+    text-align: center;
+}
+
+.login-main{
+    font-size: 28px;
+    padding-bottom: 6px;
+}
+
+.login-sub{
+    font-size: 11px;
+    color: rgb(141, 135, 120);
+}
+
+.option{
+}
+
+.option div{
+    margin: 5px;
+}
+
+.search-area{
+    text-align: center;
+}
+
+.search-area div{
+    margin: 15px;
+}
+
+.search-area input{
+font-size: 14px;
+  border: none;
+  outline: none;
+  border-bottom:1px solid black;
+}
+
+#nav-drop {
+    margin: 15px;
+    font-size: 10px;
+}
+
+.drop-detail{
+    list-style-type: none;
+    border: 1px solid black;
+    font-size: 11px;
+}
+
+.drop-main {
+    font-size: 12px;
+    border: 0.5px solid rgb(221, 220, 220);
+    padding-right: 14px;
+    padding-left: 14px;
+}
+
+.option{
+    position: relative;
+    top: 60px;
+    left: 140px;
+}
+
+.detail-main {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.detail-main div{
+    margin: 15px;
+}
+
+.detail-img{
+    margin-right: 150px;
+}
+
+.buy-button{
+    display: block;
+    border: none;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 25vw;
+}
+
+.button-sub{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-sub button{
+    border: 0.5px solid rgb(197, 197, 197);
+    background-color: white;
+    color: black;
+    width: 193px;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.cart{
+    margin-right: 3px;
+    margin-left: -15px;
 }
