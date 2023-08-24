@@ -7,6 +7,8 @@ import Navbar from './component/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState } from 'react';
 import Search from './page/Search';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 // 전체 상품 페이지, 로그인, 제품 상세 페이지
 // 전체 제품이 보임

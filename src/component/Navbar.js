@@ -4,10 +4,11 @@ import { faUser } from '@fortawesome/free-regular-svg-icons'
 import { faBagShopping, faSearch } from '@fortawesome/free-solid-svg-icons'
 import Dropdown from 'react-bootstrap/Dropdown';
 import { useNavigate } from 'react-router-dom';
+import Menulist from './Menulist';
+import { useState } from 'react';
 
 const Navbar = () => {
-  const menuList = ['BEST', '미리 만나는 가을[7% Off]', 'RONDE(제작)/최대 70%할인', 'OUTER', 'KNIT', 'TOP', 'SHIRTS', 'BOTTOM', 'SHOES & BAG', 'ACC', 'ACCOUNT', 'COMMUNITY'];
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
 
   return (
     <div>
@@ -19,8 +20,9 @@ const Navbar = () => {
           입고 지연 안내는 Delay 게시판을 이용해주세요.
         </div>
       </div>
+      
       <div className="logoMain">
-        <div id='nav-drop'>
+      <div id='nav-drop'>
           <Dropdown>
             <Dropdown.Toggle variant="secondary" id="dropdown-basic">
               =
@@ -40,7 +42,8 @@ const Navbar = () => {
               <Dropdown.Item href="#/action-11">ACC</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-        </div>
+</div>
+
         <img className='homeImg' width={100} src='https://t1.daumcdn.net/thumb/R1280x0.fpng/?fname=http://t1.daumcdn.net/brunch/service/user/6H5a/image/D6si366Dm-rwWVLXQ-4lcuk3uXU.png' onClick={() => navigate("/")} />
         <div className="buttons">
           <div onClick={() => navigate("/login")}><FontAwesomeIcon icon={faUser} /></div>
@@ -50,7 +53,7 @@ const Navbar = () => {
       </div>
       <div className="menu-area">
         <ul className="menu-list">
-          {menuList.map(menu => <li>{menu}</li>)}
+          <Menulist/>
         </ul>
         <div>
 

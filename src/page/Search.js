@@ -9,7 +9,7 @@ const Search = () => {
     const search = (event) => {
         if (event.key == "Enter") {
           let keyword = event.target.value
-          console.log("key")
+          console.log("key", event.key)
           navigate(`/search?q=${keyword}`);
         }
       }

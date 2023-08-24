@@ -3,7 +3,8 @@ import { useParams } from 'react-router-dom'
 import { Container, Row, Col, Dropdown } from 'react-bootstrap';
 //import { useNavigate } from 'react-router-dom';
 
-const ProductDetail = () => {
+
+const ProductDetail = ({item}) => {
   /*  const navigate = useNavigate();
     const loginOk =({authenticate})=>{
       if(authenticate == true){
